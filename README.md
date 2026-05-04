@@ -82,7 +82,7 @@ portfolio/
 
 ## 🌐 Acesso
 
-👉 https://seu-usuario.github.io/portfolio
+👉 https://michelwalendolf-dev.github.io/portifolio/
 
 ---
 
