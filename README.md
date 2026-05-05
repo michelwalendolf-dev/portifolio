@@ -89,7 +89,7 @@ portfolio/
 ## 📬 Contato
 
 * Email: [michelwalendolf20@gmail.com](mailto:michelwalendolf20@gmail.com)
-* LinkedIn: https://linkedin.com/in/seu-usuario
+* LinkedIn: https://www.linkedin.com/in/michel-walendolf-b6b376408/
 * GitHub: https://github.com/michelwalendolf-dev
 
 ---
