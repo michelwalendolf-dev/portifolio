@@ -389,16 +389,36 @@ section {
 
 .skill-bar-wrap {
     margin-top: 1rem;
+}
+
+.skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: .04em;
+}
+
+.skill-bar-pct {
+    color: var(--text);
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.skill-bar-track {
     background: #ffffff0a;
     border-radius: 4px;
-    height: 3px;
-    overflow: hidden
+    height: 4px;
+    overflow: hidden;
 }
 
 .skill-bar {
     height: 100%;
     border-radius: 4px;
-    transition: width 1s ease
+    transition: width 1s ease;
 }
 
 .bar-accent  { background: var(--accent) }
@@ -578,7 +598,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .container {
         padding: 0 1.2rem;
         padding-top: 64px
@@ -696,7 +715,7 @@ footer {
         padding: 9px 18px
     }
 }
-/* ── Contact Buttons ─────────────────────────────── */
+
 .contact-btns {
     display: flex;
     gap: .65rem;
@@ -767,7 +786,6 @@ footer {
     }
 }
 
-/* ── Back to Top ─────────────────────────────────── */
 .back-to-top {
     position: fixed;
     bottom: 2rem;

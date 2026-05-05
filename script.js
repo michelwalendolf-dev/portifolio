@@ -1,5 +1,22 @@
 setTimeout(() => {
-    document.querySelectorAll('.skill-bar').forEach(b => b.style.width = b.dataset.w);
+    document.querySelectorAll('.skill-bar').forEach(b => {
+        const pct = b.dataset.w;
+
+        const wrap = b.closest('.skill-bar-wrap');
+        if (wrap && !wrap.querySelector('.skill-bar-label')) {
+            const label = document.createElement('div');
+            label.className = 'skill-bar-label';
+            label.innerHTML = `<span>nível</span><span class="skill-bar-pct">${pct}</span>`;
+            wrap.insertBefore(label, wrap.firstChild);
+
+            const track = document.createElement('div');
+            track.className = 'skill-bar-track';
+            wrap.appendChild(track);
+            track.appendChild(b);
+        }
+
+        b.style.width = pct;
+    });
 }, 400);
 
 document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
@@ -46,7 +63,7 @@ if (menuToggle && navLinks) {
         }
     });
 }
-// Back to top
+
 const backToTop = document.getElementById('backToTop');
 const hero = document.querySelector('.hero');
 
